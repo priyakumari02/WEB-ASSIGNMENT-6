@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Java Script Objects</title>
+    <script src="index.js"></script>
+    <style>
+
+     body{
+         background-color: #B983FF;
+     }
+
+      .row {
+        display: flex;
+      }
+
+      .column {
+        flex: 40.33%;
+        margin: 6%;
+        display: grid;
+      }
+      .navbar{
+        display: flex;
+        justify-content: space-around;
+        background-color: #ff0075;
+        color: #172774;
+      }
+      button {
+        background-color: #172774;
+        border: none;
+        color: whitesmoke;
+        padding: 20px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        display: flex;
+        justify-content: space-around;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 12px;
+      }
+
+      #btn {
+        padding: 10px 14px;
+        background-color: #ff0075;
+        border: 2px solid black;
+        color: white;
+        font-weight: bold;
+        border-radius: 12px;
+        cursor: pointer;
+      }
+      #para1,#para2,#para3{
+          font-family:Georgia, 'Times New Roman', Times, serif;
+          line-height: 170%;
+          font-weight: bold;
+          font-size: large;
+      }
+      h1{
+          font-family: Georgia, 'Times New Roman', Times, serif;
+          font-weight: bolder;
+      }
+      .h1 {
+        text-align: center;
+        color: darkblue;
+      }
+    </style>
+  </head>
+
+  
+    <nav class="navbar">
+      <h1>Priya Kumari</h1>
+      <h1>2006191</h1>
+    </nav>
+
+    <h1 class="h1">Java Script Objects</h1>
+    <div class="row">
+      <div class="column">
+        <button onclick="Display_Properties1()">Person 1</button>
+        <br />
+        <br />
+        <button id="btn" onclick="toggleHide1()">Show/Hide</button>
+        <p id="para1">
+            Person 1: <br><br>
+           First Name - Nand <br>
+           Last Name- Kishor <br>
+           Office Address - Telangana,India <br>
+        </p>
+      </div>
+      <div class="column">
+        <button onclick="Display_Properties2()">Person 2</button>
+        <br />
+        <br />
+        <button id="btn" onclick="toggleHide2()">Show/Hide</button>
+        <p id="para2">
+          Person 2 : <br><br>
+          First Name - Rita <br>
+          Last Name- Devi <br>
+          Office Address - New
+          York,USA
+        </p>
+      </div>
+      <div class="column">
+        <button onclick="Display_Properties3()">Person 3</button>
+        <br />
+        <br />
+        <button id="btn" onclick="toggleHide3()">Show/Hide</button>
+        <p id="para3">
+          Person 3 : <br><br>
+          First Name - Priya <br> 
+          Last Name- Kumari <br>
+         Office Address - California,USA <br>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
